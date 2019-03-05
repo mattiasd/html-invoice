@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>A simple, clean, and responsive HTML invoice template</title>
+
+    <style>
+      .invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        /* border: 1px solid #eee; */
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */
+        font-size: 12px;
+        line-height: 18px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      }
+
+      .invoice {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+      }
+
+      .invoice td {
+        padding: 10px;
+        vertical-align: top;
+      }
+
+      .invoice table td {
+        padding: 0;
+        padding-right: 10px;
+      }
+
+      .invoice table tr td:nth-child(2) {
+        text-align: right;
+      }
+
+      .invoice .heading {
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+
+      .invoice td.line {
+        border-top: 1px solid #000;
+      }
+
+      .kid {
+        width: 30%;
+        border-right: 1px solid #000;
+      }
+
+      .amount {
+        width: 20%;
+        border-right: 1px solid #000;
+      }
+
+      .toaccount {
+        width: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="invoice-box">
+      <table class="invoice" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="line" colspan="2">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="heading">Faktura:</td>
+                <td class="heading">102031</td>
+              </tr>
+              <tr>
+                <td>Medlemsnr:</td>
+                <td>61513</td>
+              </tr>
+              <tr>
+                <td>Fakturadato:</td>
+                <td>21.02.2019</td>
+              </tr>
+            </table>
+          </td>
+          <td class="line">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="heading">&nbsp;</td>
+                <td class="heading">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Beløp:</td>
+                <td>2 160,00</td>
+              </tr>
+              <tr>
+                <td>Forfallsdato:</td>
+                <td>07.03.2019</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="heading">Betalt av</td>
+              </tr>
+              <tr>
+                <td>Jan1 Norgård1</td>
+              </tr>
+              <tr>
+                <td>Spinnerkroken 11s</td>
+              </tr>
+              <tr>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>6101 VOLDA</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="heading">Betalt til</td>
+              </tr>
+              <tr>
+                <td>Creo - forbundet for kunst og kultur</td>
+              </tr>
+              <tr>
+                <td>Postboks 9007 Grønland</td>
+              </tr>
+              <tr>
+                <td>0133 Oslo</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="line kid">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="heading">Kundeidentifikasjon</td>
+              </tr>
+              <tr>
+                <td>10000065136</td>
+              </tr>
+            </table>
+          </td>
+          <td class="line amount">
+            <table cellpadding="0" cellspacing="0" align="center">
+              <tr>
+                <td class="heading">Kroner</td>
+                <td class="heading">Øre</td>
+              </tr>
+              <tr>
+                <td>2160</td>
+                <td>00</td>
+              </tr>
+            </table>
+          </td>
+          <td class="line toaccount">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="heading">Til konto</td>
+              </tr>
+              <tr>
+                <td>9001 05 70211</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
